@@ -1,0 +1,116 @@
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.rbc-day-slot.rbc-day-selected {
+  border: 2px solid #007bff; 
+  border-radius: 5px; 
+}
+
+.rbc-event-content {
+  display: flex;
+  background-color:rgb(119, 175, 235);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.rbc-btn-group {
+  display: flex;
+  align-items: center;
+}
+.rbc-btn-group:first-child {
+  margin-right: auto;
+}
+
+.rbc-btn-group button {
+  padding: 8px 15px;
+  margin: 0 5px; 
+  background-color: transparent; 
+  color: #fff;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+.rbc-btn-group button:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+.current-month {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.current-month:before {
+  content: '\2022'; 
+  margin-right: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  background-color:rgba(116, 113, 113, 0.8); ; 
+  border-radius: 8px;
+  padding: 20px;
+  width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the modal header */
+.modal-header {
+  margin-bottom: 20px;
+}
+
+/* Styles for the modal header title */
+.modal-header h2 {
+  margin: 0;
+}
+
+/* Styles for the modal form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for the modal form labels */
+.modal-form label {
+  font-weight: bold;
+}
+
+/* Styles for the modal form inputs */
+.modal-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* Styles for the modal form buttons */
+.modal-form button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hover effect for the modal form buttons */
+.modal-form button:hover {
+  background-color: #0056b3;
+}
